@@ -1,4 +1,4 @@
-# 20_HW_Solidity
+# 21_HW_Advanced_Solidity
 
 Testing on TESTNET Ropsten
 
