@@ -1,0 +1,302 @@
+remix.call(message: {name, key, payload}): Call a registered plugins
+
+remix.getFile(path): Returns the content of the file located at the given path
+
+remix.setFile(path, content): set the content of the file located at the given path
+
+remix.debug(hash): Start debugging a transaction.
+
+remix.loadgist(id): Load a gist in the file explorer.
+
+remix.loadurl(url): Load the given url in the file explorer. The url can be of type github, swarm, ipfs or raw http
+
+remix.setproviderurl(url): Change the current provider to Web3 provider and set the url endpoint.
+
+remix.execute(filepath): Run the script specified by file path. If filepath is empty, script currently displayed in the editor is executed.
+
+remix.exeCurrent(): Run the script currently displayed in the editor
+
+remix.help(): Display this help message
+
+remix.debugHelp(): Display help message for debugging
+
+ - Welcome to Remix v0.9.3 - 
+
+You can use this terminal for: 
+Checking transactions details and start debugging.
+Running JavaScript scripts. The following libraries are accessible: 
+web3 version 1.0.0
+ethers.js
+swarmgw
+remix (run remix.help() for more info)
+Executing common command to interact with the Remix interface (see list of commands above). Note that these commands can also be included and run from a JavaScript script.
+Use exports/.register(key, obj)/.remove(key)/.clear() to register and reuse object across script executions.
+creation of PupperCoin pending...
+https://ropsten.etherscan.io/tx/0x5efbe29cc4ce726b327a97108823e65e7af0a8bd5bb54e92caa2f61e306dbcf9
+[block: txIndex:]from:0x54d...e7f57to:PupperCoin.(constructor)value:0 weidata:0x608...00000logs:1hash:0x5ef...dbcf9
+ status 	true Transaction mined and execution succeed
+ transaction hash 	0x5efbe29cc4ce726b327a97108823e65e7af0a8bd5bb54e92caa2f61e306dbcf9
+ from 	0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57
+ to 	PupperCoin.(constructor)
+ gas 	1522270 gas 
+ transaction cost 	1522270 gas 
+ hash 	0x5efbe29cc4ce726b327a97108823e65e7af0a8bd5bb54e92caa2f61e306dbcf9
+ input 	0x608...00000
+ decoded input 	{
+	"string name": "puppercoin",
+	"string symbol": "PPH",
+	"uint256 initial_supply": {
+		"_hex": "0x00"
+	}
+}
+ decoded output 	 - 
+ logs 	[
+	{
+		"from": "0xE70F36F1d62620199200349890B1F14895bbBbc2",
+		"topic": "0x6ae172837ea30b801fbfcdd4108aa1d5bf8ff775444fd70256b44e6bf3dfc3f6",
+		"event": "MinterAdded",
+		"args": {
+			"0": "0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57",
+			"account": "0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57",
+			"length": 1
+		}
+	}
+]
+ value 	0 wei 
+call to PupperCoin.symbol
+CALL
+[call]from:0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57to:PupperCoin.symbol()data:0x95d...89b41
+ transaction hash 	call0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f570xE70F36F1d62620199200349890B1F14895bbBbc20x95d89b41
+ from 	0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57
+ to 	PupperCoin.symbol() 0xE70F36F1d62620199200349890B1F14895bbBbc2
+ hash 	call0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f570xE70F36F1d62620199200349890B1F14895bbBbc20x95d89b41
+ input 	0x95d...89b41
+ decoded input 	{}
+ decoded output 	{
+	"0": "string: PPH"
+}
+ logs 	[]
+call to PupperCoin.name
+CALL
+[call]from:0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57to:PupperCoin.name()data:0x06f...dde03
+ transaction hash 	call0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f570xE70F36F1d62620199200349890B1F14895bbBbc20x06fdde03
+ from 	0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57
+ to 	PupperCoin.name() 0xE70F36F1d62620199200349890B1F14895bbBbc2
+ hash 	call0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f570xE70F36F1d62620199200349890B1F14895bbBbc20x06fdde03
+ input 	0x06f...dde03
+ decoded input 	{}
+ decoded output 	{
+	"0": "string: puppercoin"
+}
+ logs 	[]
+call to PupperCoin.totalSupply
+CALL
+[call]from:0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57to:PupperCoin.totalSupply()data:0x181...60ddd
+ transaction hash 	call0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f570xE70F36F1d62620199200349890B1F14895bbBbc20x18160ddd
+ from 	0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57
+ to 	PupperCoin.totalSupply() 0xE70F36F1d62620199200349890B1F14895bbBbc2
+ hash 	call0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f570xE70F36F1d62620199200349890B1F14895bbBbc20x18160ddd
+ input 	0x181...60ddd
+ decoded input 	{}
+ decoded output 	{
+	"0": "uint256: 0"
+}
+ logs 	[]
+creation of PupperCoinSaleDeployer pending...
+https://ropsten.etherscan.io/tx/0x9eed3ba6270f70e1180be327592e88b538c8fe85257032adcb9f5e3d315b96fd
+[block: txIndex:]from:0x54d...e7f57to:PupperCoinSaleDeployer.(constructor)value:0 weidata:0x608...00000logs:5hash:0x9ee...b96fd
+ status 	true Transaction mined and execution succeed
+ transaction hash 	0x9eed3ba6270f70e1180be327592e88b538c8fe85257032adcb9f5e3d315b96fd
+ from 	0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57
+ to 	PupperCoinSaleDeployer.(constructor)
+ gas 	4785286 gas 
+ transaction cost 	4766086 gas 
+ hash 	0x9eed3ba6270f70e1180be327592e88b538c8fe85257032adcb9f5e3d315b96fd
+ input 	0x608...00000
+ decoded input 	{
+	"string name": "puppercoin",
+	"string symbol": "PPC",
+	"address wallet": "0xEBffB75076FBcEef8a7C626B871b495dFA192B7a",
+	"uint256 goal": {
+		"_hex": "0x012c"
+	}
+}
+ decoded output 	 - 
+ logs 	[
+	{
+		"from": "0x66B7D479D10EbDdc39819ba3667B5E11f15A6d9d",
+		"topic": "0x6ae172837ea30b801fbfcdd4108aa1d5bf8ff775444fd70256b44e6bf3dfc3f6",
+		"event": "MinterAdded",
+		"args": {
+			"0": "0x54bfbCCdB2041cFB806da1d75fBAB24641B4b740",
+			"account": "0x54bfbCCdB2041cFB806da1d75fBAB24641B4b740",
+			"length": 1
+		}
+	},
+	{
+		"from": "0xfefe7047C599f55f47CB3927Bf658e5Ee7b38C91",
+		"topic": "0x4101e71e974f68df5e9730cc223280b41654676bbb052cdcc735c3337e64d2d9",
+		"event": "PrimaryTransferred",
+		"args": {
+			"0": "0xFB8660852192821915520897912865F1DB0f6e1a",
+			"recipient": "0xFB8660852192821915520897912865F1DB0f6e1a",
+			"length": 1
+		}
+	},
+	{
+		"from": "0xBA53C1dFd61A2b09E6dd651C2c8F15662e71C929",
+		"topic": "0x4101e71e974f68df5e9730cc223280b41654676bbb052cdcc735c3337e64d2d9",
+		"event": "PrimaryTransferred",
+		"args": {
+			"0": "0xFB8660852192821915520897912865F1DB0f6e1a",
+			"recipient": "0xFB8660852192821915520897912865F1DB0f6e1a",
+			"length": 1
+		}
+	},
+	{
+		"from": "0x66B7D479D10EbDdc39819ba3667B5E11f15A6d9d",
+		"topic": "0x6ae172837ea30b801fbfcdd4108aa1d5bf8ff775444fd70256b44e6bf3dfc3f6",
+		"event": "MinterAdded",
+		"args": {
+			"0": "0xFB8660852192821915520897912865F1DB0f6e1a",
+			"account": "0xFB8660852192821915520897912865F1DB0f6e1a",
+			"length": 1
+		}
+	},
+	{
+		"from": "0x66B7D479D10EbDdc39819ba3667B5E11f15A6d9d",
+		"topic": "0xe94479a9f7e1952cc78f2d6baab678adc1b772d936c6583def489e524cb66692",
+		"event": "MinterRemoved",
+		"args": {
+			"0": "0x54bfbCCdB2041cFB806da1d75fBAB24641B4b740",
+			"account": "0x54bfbCCdB2041cFB806da1d75fBAB24641B4b740",
+			"length": 1
+		}
+	}
+]
+ value 	0 wei 
+call to PupperCoinSaleDeployer.token_address
+CALL
+[call]from:0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57to:PupperCoinSaleDeployer.token_address()data:0x8c8...e8fee
+ transaction hash 	call0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f570x54bfbCCdB2041cFB806da1d75fBAB24641B4b7400x8c8e8fee
+ from 	0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57
+ to 	PupperCoinSaleDeployer.token_address() 0x54bfbCCdB2041cFB806da1d75fBAB24641B4b740
+ hash 	call0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f570x54bfbCCdB2041cFB806da1d75fBAB24641B4b7400x8c8e8fee
+ input 	0x8c8...e8fee
+ decoded input 	{}
+ decoded output 	{
+	"0": "address: 0x66B7D479D10EbDdc39819ba3667B5E11f15A6d9d"
+}
+ logs 	[]
+call to PupperCoinSaleDeployer.token_sale_address
+CALL
+[call]from:0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57to:PupperCoinSaleDeployer.token_sale_address()data:0xfdd...e9847
+ transaction hash 	call0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f570x54bfbCCdB2041cFB806da1d75fBAB24641B4b7400xfdde9847
+ from 	0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57
+ to 	PupperCoinSaleDeployer.token_sale_address() 0x54bfbCCdB2041cFB806da1d75fBAB24641B4b740
+ hash 	call0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f570x54bfbCCdB2041cFB806da1d75fBAB24641B4b7400xfdde9847
+ input 	0xfdd...e9847
+ decoded input 	{}
+ decoded output 	{
+	"0": "address: 0xFB8660852192821915520897912865F1DB0f6e1a"
+}
+ logs 	[]
+transact to PupperCoinSale.buyTokens pending ... 
+transact to PupperCoinSale.buyTokens errored: gas required exceeds allowance (8000029) or always failing transaction 
+call to PupperCoinSale.capReached
+CALL
+[call]from:0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57to:PupperCoinSaleDeployer.(fallback)data:0x4f9...35945
+call to PupperCoinSale.capReached
+CALL
+[call]from:0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57to:PupperCoinSaleDeployer.(fallback)data:0x4f9...35945
+ transaction hash 	call0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f570x54bfbCCdB2041cFB806da1d75fBAB24641B4b7400x4f935945
+ from 	0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57
+ to 	PupperCoinSaleDeployer.(fallback) 0x54bfbCCdB2041cFB806da1d75fBAB24641B4b740
+ hash 	call0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f570x54bfbCCdB2041cFB806da1d75fBAB24641B4b7400x4f935945
+ input 	0x4f9...35945
+ decoded input 	 - 
+ decoded output 	 - 
+ logs 	[]
+call to PupperCoinSale.finalized
+CALL
+[call]from:0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57to:PupperCoinSaleDeployer.(fallback)data:0xb3f...05b97
+ transaction hash 	call0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f570x54bfbCCdB2041cFB806da1d75fBAB24641B4b7400xb3f05b97
+ from 	0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57
+ to 	PupperCoinSaleDeployer.(fallback) 0x54bfbCCdB2041cFB806da1d75fBAB24641B4b740
+ hash 	call0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f570x54bfbCCdB2041cFB806da1d75fBAB24641B4b7400xb3f05b97
+ input 	0xb3f...05b97
+ decoded input 	 - 
+ decoded output 	 - 
+ logs 	[]
+call to PupperCoinSale.closingTime
+CALL
+[call]from:0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57to:PupperCoinSaleDeployer.(fallback)data:0x4b6...753bc
+ transaction hash 	call0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f570x54bfbCCdB2041cFB806da1d75fBAB24641B4b7400x4b6753bc
+ from 	0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57
+ to 	PupperCoinSaleDeployer.(fallback) 0x54bfbCCdB2041cFB806da1d75fBAB24641B4b740
+ hash 	call0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f570x54bfbCCdB2041cFB806da1d75fBAB24641B4b7400x4b6753bc
+ input 	0x4b6...753bc
+ decoded input 	 - 
+ decoded output 	 - 
+ logs 	[]
+call to PupperCoin.isMinter errored: Error encoding arguments: Error: invalid address (arg="", coderType="address", value="", version=4.0.40) 
+transact to PupperCoinSale.buyTokens pending ... 
+https://ropsten.etherscan.io/tx/0xa86d36999753d84cf7cf1853cbd8422eec6534bbf9822c85dfd365e0fc77fc3e
+[block: txIndex:]from:0x54d...e7f57to:PupperCoinSale.buyTokens(address) 0xFB8...f6e1avalue:300 weidata:0xec8...92b7alogs:3hash:0xa86...7fc3e
+ status 	true Transaction mined and execution succeed
+ transaction hash 	0xa86d36999753d84cf7cf1853cbd8422eec6534bbf9822c85dfd365e0fc77fc3e
+ from 	0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57
+ to 	PupperCoinSale.buyTokens(address) 0xFB8660852192821915520897912865F1DB0f6e1a
+ gas 	163403 gas 
+ transaction cost 	157715 gas 
+ hash 	0xa86d36999753d84cf7cf1853cbd8422eec6534bbf9822c85dfd365e0fc77fc3e
+ input 	0xec8...92b7a
+ decoded input 	{
+	"address beneficiary": "0xEBffB75076FBcEef8a7C626B871b495dFA192B7a"
+}
+ decoded output 	 - 
+ logs 	[
+	{
+		"from": "0x66B7D479D10EbDdc39819ba3667B5E11f15A6d9d",
+		"topic": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+		"event": "Transfer",
+		"args": {
+			"0": "0x0000000000000000000000000000000000000000",
+			"1": "0xBA53C1dFd61A2b09E6dd651C2c8F15662e71C929",
+			"2": "300",
+			"from": "0x0000000000000000000000000000000000000000",
+			"to": "0xBA53C1dFd61A2b09E6dd651C2c8F15662e71C929",
+			"value": "300",
+			"length": 3
+		}
+	},
+	{
+		"from": "0xFB8660852192821915520897912865F1DB0f6e1a",
+		"topic": "0x6faf93231a456e552dbc9961f58d9713ee4f2e69d15f1975b050ef0911053a7b",
+		"event": "TokensPurchased",
+		"args": {
+			"0": "0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57",
+			"1": "0xEBffB75076FBcEef8a7C626B871b495dFA192B7a",
+			"2": "300",
+			"3": "300",
+			"purchaser": "0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57",
+			"beneficiary": "0xEBffB75076FBcEef8a7C626B871b495dFA192B7a",
+			"value": "300",
+			"amount": "300",
+			"length": 4
+		}
+	},
+	{
+		"from": "0xfefe7047C599f55f47CB3927Bf658e5Ee7b38C91",
+		"topic": "0x2da466a7b24304f47e87fa2e1e5a81b9831ce54fec19055ce277ca2f39ba42c4",
+		"event": "Deposited",
+		"args": {
+			"0": "0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57",
+			"1": "300",
+			"payee": "0x54d8EF3d22BfdE76CA14616f1f2A63A6AF6e7f57",
+			"weiAmount": "300",
+			"length": 2
+		}
+	}
+]
+ value 	300 wei 
