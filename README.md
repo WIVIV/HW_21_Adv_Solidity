@@ -1,6 +1,6 @@
 # 20_HW_Solidity
 
-Testing on the Rothstein Network
+Testing on the Ropstein Network
 
 1) Deploy PupperCoin.sol using Remix and MetaMask and record the contract address. Use Name: puppercoin; Symbol: PPC; Inital Supply: 0.
     
